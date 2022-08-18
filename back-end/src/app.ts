@@ -7,7 +7,7 @@ app.use(cors());
 app.use(json());
 
 app.get("/students", async (req: Request, res: Response) => {
-  console.log("PR test");
+  console.log("PR action test");
   const students = await prisma.student.findMany();
   res.send(students);
 });
