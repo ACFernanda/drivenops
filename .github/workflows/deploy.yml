@@ -1,0 +1,8 @@
+on:
+  push:
+    branches:
+      - main
+name: Build and Deploy
+jobs:
+  build:
+    runs-on: self-hosted
